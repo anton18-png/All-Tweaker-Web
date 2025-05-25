@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Интерфейс - Документация All Tweaker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="cyberpunk-theme">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">All Tweaker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Документация</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#download">Скачать</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Боковое меню -->
+            <nav class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                Введение
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="installation.html">
+                                Установка
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="interface.html">
+                                Интерфейс
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html">
+                                Возможности
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tweaks.html">
+                                Твики
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="themes.html">
+                                Темы
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="settings.html">
+                                Настройки
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Основной контент -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Интерфейс All Tweaker</h1>
+                </div>
+
+                <div class="content">
+                    <h2>Общий обзор</h2>
+                    <p>All Tweaker имеет современный и интуитивно понятный интерфейс, построенный на основе PyQt6. Программа использует систему вкладок для организации различных функций и настроек.</p>
+
+                    <h2>Основные элементы интерфейса</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3>Главное окно</h3>
+                            <ul>
+                                <li><strong>Заголовок окна</strong> - отображает название программы и текущую версию</li>
+                                <li><strong>Меню</strong> - содержит основные функции программы</li>
+                                <li><strong>Панель инструментов</strong> - быстрый доступ к часто используемым функциям</li>
+                                <li><strong>Область вкладок</strong> - основная рабочая область программы</li>
+                                <li><strong>Строка состояния</strong> - отображает информацию о текущем состоянии программы</li>
+                            </ul>
+
+                            <h3>Система вкладок</h3>
+                            <p>Программа использует динамическую загрузку вкладок для оптимизации производительности. Каждая вкладка загружается только при первом обращении к ней.</p>
+                            <ul>
+                                <li><strong>Вкладка "Общие"</strong> - основные настройки системы</li>
+                                <li><strong>Вкладка "Производительность"</strong> - оптимизация работы системы</li>
+                                <li><strong>Вкладка "Безопасность"</strong> - настройки безопасности Windows</li>
+                                <li><strong>Вкладка "Внешний вид"</strong> - настройки интерфейса Windows</li>
+                                <li><strong>Вкладка "Сеть"</strong> - настройки сетевых параметров</li>
+                            </ul>
+
+                            <h3>Элементы управления</h3>
+                            <ul>
+                                <li><strong>Кнопки</strong> - для выполнения действий</li>
+                                <li><strong>Чекбоксы</strong> - для включения/выключения функций</li>
+                                <li><strong>Выпадающие списки</strong> - для выбора опций</li>
+                                <li><strong>Слайдеры</strong> - для настройки числовых параметров</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <h2>Навигация</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3>Переключение между вкладками</h3>
+                            <p>Вы можете переключаться между вкладками следующими способами:</p>
+                            <ul>
+                                <li>Щелчок по заголовку вкладки</li>
+                                <li>Использование сочетания клавиш Ctrl+Tab</li>
+                                <li>Использование колесика мыши при наведении на заголовки вкладок</li>
+                            </ul>
+
+                            <h3>Контекстные меню</h3>
+                            <p>В различных частях интерфейса доступны контекстные меню, вызываемые правой кнопкой мыши. Они содержат дополнительные опции для работы с конкретными элементами.</p>
+                        </div>
+                    </div>
+
+                    <h2>Настройка интерфейса</h2>
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <h3>Темы оформления</h3>
+                            <p>Программа поддерживает различные темы оформления:</p>
+                            <ul>
+                                <li>Светлая тема</li>
+                                <li>Темная тема</li>
+                                <li>Системная тема</li>
+                            </ul>
+
+                            <h3>Масштабирование</h3>
+                            <p>Вы можете изменить масштаб интерфейса:</p>
+                            <ul>
+                                <li>Через меню "Вид" -> "Масштаб"</li>
+                                <li>С помощью сочетания клавиш Ctrl++ и Ctrl+-</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="alert alert-info">
+                        <h4>Совет</h4>
+                        <p>Для быстрого доступа к часто используемым функциям вы можете настроить горячие клавиши в настройках программы.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 All Tweaker. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="https://github.com/scode18/All-Tweaker" class="social-link">GitHub</a>
+                    <a href="https://t.me/all_tweaker" class="social-link">Telegram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 

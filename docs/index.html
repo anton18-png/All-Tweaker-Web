@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Документация All Tweaker</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body class="cyberpunk-theme">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">All Tweaker</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Документация</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html#download">Скачать</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <!-- Боковое меню -->
+            <nav class="col-md-3 col-lg-2 d-md-block bg-dark sidebar collapse">
+                <div class="position-sticky pt-3">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">
+                                Введение
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="installation.html">
+                                Установка
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="interface.html">
+                                Интерфейс
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="features.html">
+                                Возможности
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tweaks.html">
+                                Твики
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="themes.html">
+                                Темы
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="settings.html">
+                                Настройки
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="faq.html">
+                                FAQ
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            <!-- Основной контент -->
+            <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4">
+                <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
+                    <h1 class="h2">Документация All Tweaker</h1>
+                </div>
+
+                <div class="content">
+                    <h2>Введение</h2>
+                    <p>All Tweaker - это мощная утилита для оптимизации и настройки Windows, написанная на Python с использованием библиотеки ttkbootstrap. Программа предоставляет удобный графический интерфейс для управления различными настройками системы.</p>
+
+                    <h3>Основные компоненты</h3>
+                    <ul>
+                        <li><strong>main.py</strong> - основной файл программы, содержащий логику интерфейса и основные функции</li>
+                        <li><strong>tweaks/tabs_beta.py</strong> - модуль с определением вкладок и их содержимого</li>
+                        <li><strong>settings.ini</strong> - конфигурационный файл для хранения настроек</li>
+                    </ul>
+
+                    <h3>Технические особенности</h3>
+                    <ul>
+                        <li>Использование ttkbootstrap для современного интерфейса</li>
+                        <li>Поддержка различных тем оформления</li>
+                        <li>Система подсказок с просмотром содержимого скриптов</li>
+                        <li>Динамическая загрузка вкладок</li>
+                        <li>Конфигурируемые настройки через settings.ini</li>
+                    </ul>
+
+                    <h3>Структура проекта</h3>
+                    <pre>
+All Tweaker/
+├── main.py
+├── settings.ini
+├── tweaks/
+│   └── tabs_beta.py
+└── scripts/
+    ├── privacy/
+    ├── optimization/
+    ├── cleanup/
+    ├── power/
+    ├── updates/
+    ├── programs/
+    ├── drivers/
+    ├── fixes/
+    └── other/
+                    </pre>
+
+                    <h3>Требования к системе</h3>
+                    <ul>
+                        <li>Windows 10/11</li>
+                        <li>Python 3.8 или выше</li>
+                        <li>ttkbootstrap</li>
+                        <li>Доступ к реестру Windows</li>
+                        <li>Права администратора для некоторых операций</li>
+                    </ul>
+
+                    <div class="alert alert-info">
+                        <h4>Важно</h4>
+                        <p>Перед использованием программы рекомендуется создать точку восстановления системы.</p>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <footer class="footer mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 All Tweaker. Все права защищены.</p>
+                </div>
+                <div class="col-md-6 text-end">
+                    <a href="https://github.com/scode18/All-Tweaker" class="social-link">GitHub</a>
+                    <a href="https://t.me/all_tweaker" class="social-link">Telegram</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html> 
