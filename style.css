@@ -226,3 +226,43 @@ body {
 .support-card:hover {
     animation: glow 2s infinite;
 } 
+
+.version-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, rgba(0, 255, 157, 0.1), rgba(255, 0, 255, 0.1));
+}
+
+.version-section h2 {
+    color: var(--primary-color);
+    font-weight: 700;
+    margin-bottom: 3rem;
+}
+
+.version-section .feature-card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 2rem;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.version-section .feature-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    animation: glow 2s infinite;
+}
+
+.version-section .feature-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.version-section .download-instructions {
+    margin: 1.5rem 0;
+    padding-left: 1.5rem;
+}
+
+.version-section .download-instructions li {
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+}
