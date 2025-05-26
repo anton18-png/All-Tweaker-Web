@@ -1,10 +1,10 @@
 :root {
-    --primary-color: #7930ff; /* Purple */
-    --secondary-color: #d93b3b; /* Red */
-    --background-color: #190831; /* Deep blue-black */
-    --text-color: #ffffff; /* White */
-    --card-bg: #0a0f21; /* Dark input background */
-    --border-color: #7930ff; /* Purple border */
+    --primary-color: #ff1744; /* AMD primary */
+    --secondary-color: #ff1744; /* AMD secondary */
+    --background-color: #0a0a0a; /* AMD bg */
+    --text-color: #ffffff; /* AMD fg */
+    --card-bg: #1a1a1a; /* AMD dark */
+    --border-color: #ffffff; /* AMD border */
 }
 
 body {
@@ -15,7 +15,7 @@ body {
 }
 
 .navbar {
-    background-color: rgba(25, 8, 49, 0.95); /* Slightly transparent version of bg */
+    background-color: rgba(10, 10, 10, 0.95);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border-color);
 }
@@ -31,16 +31,16 @@ body {
 }
 
 .nav-link:hover {
-    color: var(--secondary-color) !important; /* Red on hover */
+    color: var(--primary-color) !important;
 }
 
 .hero-section {
     padding: 100px 0;
-    background: linear-gradient(135deg, rgba(121, 48, 255, 0.1), rgba(25, 8, 49, 0.5)); /* Purple-to-dark gradient */
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.1), rgba(255, 23, 68, 0.1)); /* Adjusted to use primary color */
 }
 
 .hero-section h1 {
-    color: var(--secondary-color); /* Red heading */
+    color: var(--primary-color);
     font-weight: 700;
     margin-bottom: 1.5rem;
 }
@@ -60,8 +60,8 @@ body {
 }
 
 .btn-primary:hover {
-    background-color: #5f27cc; /* Darkened purple for hover */
-    border-color: #5f27cc;
+    background-color: #cc1236; /* Darkened primary for hover */
+    border-color: #cc1236;
     transform: translateY(-2px);
 }
 
@@ -74,9 +74,8 @@ body {
 }
 
 .btn-outline-light:hover {
-    background-color: var(--secondary-color); /* Red background on hover */
+    background-color: var(--text-color);
     color: var(--background-color);
-    border-color: var(--secondary-color);
     transform: translateY(-2px);
 }
 
@@ -99,13 +98,13 @@ body {
 }
 
 .feature-card h3 {
-    color: var(--secondary-color); /* Red heading */
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
 .reviews-section {
     padding: 80px 0;
-    background: linear-gradient(135deg, rgba(121, 48, 255, 0.1), rgba(25, 8, 49, 0.5)); /* Purple-to-dark gradient */
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.1), rgba(255, 23, 68, 0.1)); /* Adjusted to use primary color */
 }
 
 .review-card {
@@ -122,7 +121,7 @@ body {
 }
 
 .review-author {
-    color: var(--secondary-color); /* Red author name */
+    color: var(--primary-color);
     font-weight: 700;
 }
 
@@ -148,7 +147,7 @@ body {
 
 .support-section {
     padding: 80px 0;
-    background: linear-gradient(135deg, rgba(121, 48, 255, 0.1), rgba(25, 8, 49, 0.5)); /* Purple-to-dark gradient */
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.1), rgba(255, 23, 68, 0.1)); /* Adjusted to use primary color */
 }
 
 .support-options {
@@ -172,7 +171,7 @@ body {
 }
 
 .support-card h3 {
-    color: var(--secondary-color); /* Red heading */
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
@@ -190,7 +189,7 @@ body {
 }
 
 .social-link:hover {
-    color: var(--secondary-color); /* Red on hover */
+    color: var(--primary-color);
 }
 
 @media (max-width: 768px) {
@@ -230,11 +229,11 @@ body {
 
 .version-section {
     padding: 80px 0;
-    background: linear-gradient(135deg, rgba(121, 48, 255, 0.1), rgba(25, 8, 49, 0.5)); /* Purple-to-dark gradient */
+    background: linear-gradient(135deg, rgba(255, 23, 68, 0.1), rgba(255, 23, 68, 0.1)); /* Adjusted to use primary color */
 }
 
 .version-section h2 {
-    color: var(--secondary-color); /* Red heading */
+    color: var(--primary-color);
     font-weight: 700;
     margin-bottom: 3rem;
 }
@@ -254,7 +253,7 @@ body {
 }
 
 .version-section .feature-card h3 {
-    color: var(--secondary-color); /* Red heading */
+    color: var(--primary-color);
     margin-bottom: 1rem;
 }
 
